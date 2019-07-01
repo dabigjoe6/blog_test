@@ -60,5 +60,16 @@
             }
 
         }
+
+        public function deletePost($id) {
+            $ID = (int) $id;
+            $query = "DELETE FROM post_table WHERE id='$ID'";
+
+            if($this->connection->query($query) === TRUE) {
+                return true;
+            } else {
+                return false;
+            }
+        }
     }
 ?>

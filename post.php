@@ -18,7 +18,7 @@
         <h1 class=""><?= $data['title'] ?></h1>
         <p class="font-weight-normal"><?= $data['date_created'] ?></p>
     </div>
-    <button class="btn btn-danger btn-sm" style="height: 40px">Delete Blog post</button>
+    <a href="delete_post.php?id=<?= $id ?>" class="btn btn-danger btn-sm" style="height: 40px">Delete Blog post</a>
 </div>
 <div class="d-flex flex-column align-items-center">
     <form method="post" action="update_post.php" class="d-flex flex-column">
