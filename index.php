@@ -8,7 +8,7 @@
 <div class="d-flex justify-content-between bg-white position-fixed container pt-5" style="z-index: 100; width: inherit;">
     
     <h1>Blog posts</h1>
-    <button class="btn btn-primary btn-sm" style="height: 40px">Create Blog post</button>
+    <a class="btn btn-primary btn-sm" href="createPostView.php" style="height: 40px">Create Blog post</a>
 </div>
 
 <div class="d-flex flex-column align-items-center" style="position: relative; top: 100px">

@@ -44,8 +44,21 @@
             } else {
                 return false;
             }
+
+            mysqli_close($this->connection);
             
         }
-    }
 
+        public function createPost($title, $post) {
+
+            $query = "INSERT INTO post_table (`title`, `post`) VALUES ('$title', '$post')";
+
+            if($this->connection->query($query) === TRUE) {
+                return true;
+            } else {
+                return false;
+            }
+
+        }
+    }
 ?>
